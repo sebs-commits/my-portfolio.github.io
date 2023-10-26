@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
 /* default css reset */
 * {
     margin: 0;
+    font-family: 'Inter';
 }
 
 *,
@@ -28,6 +31,61 @@ picture {
     max-width: 100%;
     display: block;
 }
-/* dafault css reset ends here */
+/* --------dafault css reset ends here -------- */
 
-/* styling for header starts here */
+
+/* styling for navbar starts here */
+.nav-bar-container{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    border-bottom: lightgrey 1px solid;
+}
+
+.nav-bar{
+    display: block;
+    padding-top: 5px;
+}
+
+.nav-bar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-bar li{
+    float: left;
+    padding-right: 2em;
+}
+
+.nav-bar li a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.name-logo{
+    line-height: 16px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.btn-nav-bar{
+    /* margin: 2em; */
+    margin-left: auto;
+}
+
+/* button styling */
+.btn-resume{
+    background-color: lightgrey;
+    padding: 8px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-resume:hover{
+    background-color: darkgray;
+    border-radius: 5px;
+}

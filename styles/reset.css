@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+/* default css reset */
+* {
+    margin: 0;
+    font-family: 'Inter';
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* set code body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* makes images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+/* --------dafault css reset ends here -------- */
+
+

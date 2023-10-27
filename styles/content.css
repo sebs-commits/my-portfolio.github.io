@@ -1,0 +1,31 @@
+/* styling for the content section, it will be split into two components */
+
+/* main setup */
+html, body{
+    height:100%;
+}
+
+body{
+    overflow: hidden;
+}
+
+.main-container{
+    display: flex;
+    height: 100%;
+}
+
+.left-container{
+    flex: 0 0 50%; /* this sets the divs 50/50 */
+    background-color: #f2f2f2;
+}
+
+.right-container{
+    flex: 1; /* Allow the right panel to grow */
+    background-color: #ffffff; /* Set a background color */
+    display: flex;
+    flex-direction: column;
+}
+.right-content{
+    overflow-y: auto; /* Make the right content scrollable */
+    padding: 10px;
+}

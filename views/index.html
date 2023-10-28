@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links for css styling -->
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="/styles/content.css">
     <link rel="stylesheet" href="/styles/footer.css">
-    <title>Document</title>
+    
+    <title>Sebastian David Portfolio</title>
 </head>
 <body>
     <!-- below is the structure for navbar -->
     <div class="nav-bar-container">
         <div class="nav-bar">
             <ul>
-                <li><a href="#" class="name-logo">Sebastian<br>David.</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="" class="name-logo">Sebastian<br>David.</a></li>
+                <li><a href="#"  >Projects</a></li>
                 <li><a href="#">Experience</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact-id">Contact</a></li>
             </ul>
         </div>
         <div class="btn-nav-bar">
@@ -34,12 +36,43 @@
         <div class="right-container">
             <div class="right-content">
                 <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
+                <h1>Projects</h1>
 
                 
             </div>
         </div>
     </div>
-    <div class="contact-container">
+    <div class="contact-container" id="contact-id">
         <h1>Contact form goes here</h1>
         <h1>Contact form goes here</h1>
         <h1>Contact form goes here</h1>
@@ -47,23 +80,7 @@
         <h1>Contact form goes here</h1>
         <h1>Contact form goes here</h1>
     </div>
-    <script>
-        const rightContent = document.querySelector(".right-content");
-        
-        rightContent.addEventListener("scroll", function () {
-            if (rightContent.scrollTop + rightContent.clientHeight >= rightContent.scrollHeight - 20) {
-                document.body.style.overflowY = "auto";
-            } else if (rightContent.scrollTop <= 20) {
-                document.body.style.overflowY = "auto";
-            } else if (rightContent.scrollTop + rightContent.clientHeight >= rightContent.scrollHeight * 0.8) {
-                document.body.style.overflowY = "auto";
-            } else {
-                document.body.style.overflowY = "hidden";
-            }
-        });
-    </script>
-    
-    
+    <script src="/scripts/scroll.js"></script>
     
 </body>
 </html>

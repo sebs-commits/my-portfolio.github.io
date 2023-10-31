@@ -1,0 +1,22 @@
+.left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portait-img{
+    max-width: 85%;
+    max-height: auto;
+    margin: 3em 1em;
+    border-radius: 16px;
+}
+
+.container-text{
+    font-size: 28px;
+    margin: 0 3em;
+}
+
+.name-text{
+    font-size: 40px;
+    font-weight: bolder;
+}

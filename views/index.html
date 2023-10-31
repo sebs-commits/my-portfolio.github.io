@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,20 @@
     <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="/styles/content.css">
     <link rel="stylesheet" href="/styles/footer.css">
-    
+    <link rel="stylesheet" href="/styles/left_content.css">
+    <link rel="stylesheet" href="/styles/right_content.css">
+    <link rel="stylesheet" href="/styles/contact_form.css">
+
     <title>Portfolio V1</title>
 </head>
+
 <body>
     <!-- below is the structure for navbar -->
     <div class="nav-bar-container">
         <div class="nav-bar">
             <ul>
                 <li><a href="" class="name-logo">Sebastian<br>David.</a></li>
-                <li><a href="#"  >Projects</a></li>
+                <li><a href="#">Projects</a></li>
                 <li><a href="#">Experience</a></li>
                 <li><a href="#contact-id">Contact</a></li>
             </ul>
@@ -31,88 +36,59 @@
     <!-- main body components starts here -->
     <div class="main-container">
         <div class="left-container">
-            <h1>test</h1>
+            <img src="/images/profile_pic.jpg" class="portait-img" alt="profile picture">
+            <p class="container-text">Hi, my name is <span class="name-text">Sebastian.</span> Im a Software Engineering
+                student. Im passionate about innovating and solve real world problems...</p>
         </div>
         <div class="right-container">
             <div class="right-content">
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-                <h1>Projects</h1>
-
-                
+                <div class="project-content">
+                    <h2>Project #1</h2>
+                    <img class="project-img" src="/images/placeholder.png" alt="project">
+                    <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Tincidunt dui ut ornare lectus sit amet est.
+                        Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Lobortis
+                        mattis aliquam faucibus purus. Nunc faucibus a pellentesque sit amet porttitor eget dolor.</p>
+                </div>
+                <div class="project-content">
+                    <h2>Project #2</h2>
+                    <img class="project-img" src="/images/placeholder.png" alt="project">
+                    <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Tincidunt dui ut ornare lectus sit amet est.
+                        Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Lobortis
+                        mattis aliquam faucibus purus. Nunc faucibus a pellentesque sit amet porttitor eget dolor.</p>
+                </div>
+                <div class="project-content">
+                    <h2>Project #3</h2>
+                    <img class="project-img" src="/images/placeholder.png" alt="project">
+                    <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Tincidunt dui ut ornare lectus sit amet est.
+                        Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Lobortis
+                        mattis aliquam faucibus purus. Nunc faucibus a pellentesque sit amet porttitor eget dolor.</p>
+                </div>
             </div>
         </div>
     </div>
     <div class="contact-container" id="contact-id">
-        <h1>Contact form goes here</h1>
-        <h1>Contact form goes here</h1>
-        <h1>Contact form goes here</h1>
-        <h1>Contact form goes here</h1>
-        <h1>Contact form goes here</h1>
-        <h1>Contact form goes here</h1>
+        <h2>Contact Me</h2>
+        <form action="submit.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </div>
     <!-- <script src="/scripts/header.js"></script> -->
     <script src="/scripts/scroll.js"></script>
 </body>
+
 </html>

@@ -17,12 +17,17 @@ html {
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
+    scroll-behavior: smooth;
+/* hides scrollbar for the entire page, excluding the right content div */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 /* set code body defaults */
 body {
     min-height: 100vh;
     line-height: 1.5;
+    
 }
 
 /* makes images easier to work with */
@@ -31,6 +36,18 @@ picture {
     max-width: 100%;
     display: block;
 }
+
+/* the two following hides the scroll bar for the right content */
+.right-content{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.right-content::-webkit-scrollbar{
+    display:none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+
 /* --------dafault css reset ends here -------- */
 
 

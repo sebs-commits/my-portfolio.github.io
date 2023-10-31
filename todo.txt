@@ -1,0 +1,1 @@
+- implement a loading icon feature. the loading icon should be an animation of the "hello world" string being typed.

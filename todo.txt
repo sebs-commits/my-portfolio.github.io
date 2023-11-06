@@ -1,1 +1,8 @@
 - implement a loading icon feature. the loading icon should be an animation of the "hello world" string being typed.
+- add borders
+- style contact form
+- configure contact form so that submit button actually goes somewhere
+- change left content about me description
+- add social icons in footer and in left content
+- fix scroll so it is a bit more seamless
+- attach resume to button

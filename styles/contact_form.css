@@ -16,7 +16,7 @@ label{
 .popup {
   background-color: hsl(55, 35%, 95%);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   width: 400px;
   position: fixed; /* Change to fixed positioning */
@@ -33,13 +33,16 @@ label{
 }
 .contact-header{
   text-align: center;
+  font-size: 30px;
+  padding-bottom: 0.5rem;
 }
 input, textarea{
   width: 100%;
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 15px;
-  border: none;
+  border: 1px solid lightgrey;
+  background-color: #FBFAF2;
 }
 textarea{
   resize: none;
@@ -56,6 +59,7 @@ textarea{
 }
 .submit-btn{
   background-color: lightgrey;
+  margin-top: 1rem;
     padding: 8px 30px;
     font-size: 16px;
     font-weight: bold;

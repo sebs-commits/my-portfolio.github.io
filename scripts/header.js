@@ -1,12 +1,10 @@
-// the following is for the partially sticky header
+document.addEventListener("DOMContentLoaded", function () {
+  const openPdfButton = document.getElementById("resumeBtn");
 
-window.addEventListener("scroll", function () {
-  const header = document.querySelector(".nav-bar-container");
-  const headerHeight = header.clientHeight;
+  openPdfButton.addEventListener("click", function () {
+    let pdfUrl =
+      "/images/SebastianDavid_301241956_COOP421_SEC401_Resume2024.pdf";
 
-  if (window.scrollY > headerHeight) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
+    window.open(pdfUrl, "_blank");
+  });
 });

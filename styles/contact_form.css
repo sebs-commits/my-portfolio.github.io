@@ -10,9 +10,11 @@
   align-items: center;
   z-index: 1;
 }
-
+label{
+  font-weight: bold;
+}
 .popup {
-  background-color: #fff;
+  background-color: hsl(55, 35%, 95%);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -36,6 +38,12 @@ input, textarea{
   width: 100%;
   padding: 1rem;
   margin: 0.5rem;
+  border-radius: 15px;
+  border: none;
+}
+textarea{
+  resize: none;
+  height: 150px;
 }
 
 .popup.is-visible{
@@ -45,4 +53,18 @@ input, textarea{
 .close-button {
   cursor: pointer;
   float: right;
+}
+.submit-btn{
+  background-color: lightgrey;
+    padding: 8px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.submit-btn:hover{
+  background-color: darkgray;
+  border-radius: 5px;
 }

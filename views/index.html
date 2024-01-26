@@ -1,103 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- links for css styling -->
-    <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="/styles/navbar.css">
-    <link rel="stylesheet" href="/styles/content.css">
-    <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="/styles/left_content.css">
-    <link rel="stylesheet" href="/styles/right_content.css">
-    <link rel="stylesheet" href="/styles/contact_form.css">
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/content.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/left_content.css" />
+    <link rel="stylesheet" href="/styles/right_content.css" />
+    <link rel="stylesheet" href="/styles/contact_form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
 
     <title>Portfolio V1</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- below is the structure for navbar -->
     <div class="nav-bar-container">
-        <div class="nav-bar">
-            <ul>
-                <li><a href="" class="name-logo">Sebastian<br>David.</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#contact-id">Contact</a></li>
-            </ul>
-        </div>
-        <div class="btn-nav-bar">
-            <button type="button" class="btn-resume">Resume</button>
-        </div>
+      <div class="nav-bar">
+        <ul>
+          <li>
+            <a href="" class="name-logo">Sebastian<br />David.</a>
+          </li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Experience</a></li>
+          <li id="btnOpenForm"><a href="#" id="openPopup">Contact</a></li>
+        </ul>
+      </div>
+      <div class="btn-nav-bar">
+        <button type="button" class="btn-resume">Resume</button>
+      </div>
     </div>
     <!-- structure for navbar ends here -->
 
     <!-- main body components starts here -->
     <div class="main-container">
-        <div class="left-container">
-            <img src="/images/profile_pic.jpg" class="portait-img" alt="profile picture">
-            <p class="container-text">Hi, my name is <span class="name-text">Sebastian.</span> Im a Software Engineering
-                student. Im passionate about innovating and solve real world problems...</p>
+      <div class="left-container">
+        <img
+          src="/images/profile_pic.jpg"
+          class="portait-img"
+          alt="profile picture"
+        />
+        <p class="container-text">
+          Hi, my name is <span class="name-text">Sebastian.</span> Im a Software
+          Engineering student. Im passionate about innovating and solve real
+          world problems...
+        </p>
+      </div>
+      <div class="right-container">
+        <div class="right-content">
+          <div class="project-content">
+            <h2>Project #1</h2>
+            <img
+              class="project-img"
+              src="/images/placeholder.png"
+              alt="project"
+            />
+            <p class="project-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Tincidunt dui ut ornare lectus sit amet est. Mauris rhoncus aenean
+              vel elit scelerisque mauris pellentesque pulvinar pellentesque.
+              Lobortis mattis aliquam faucibus purus. Nunc faucibus a
+              pellentesque sit amet porttitor eget dolor.
+            </p>
+          </div>
+          <div class="project-content">
+            <h2>Project #2</h2>
+            <img
+              class="project-img"
+              src="/images/placeholder.png"
+              alt="project"
+            />
+            <p class="project-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Tincidunt dui ut ornare lectus sit amet est. Mauris rhoncus aenean
+              vel elit scelerisque mauris pellentesque pulvinar pellentesque.
+              Lobortis mattis aliquam faucibus purus. Nunc faucibus a
+              pellentesque sit amet porttitor eget dolor.
+            </p>
+          </div>
+          <div class="project-content">
+            <h2>Project #3</h2>
+            <img
+              class="project-img"
+              src="/images/placeholder.png"
+              alt="project"
+            />
+            <p class="project-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Tincidunt dui ut ornare lectus sit amet est. Mauris rhoncus aenean
+              vel elit scelerisque mauris pellentesque pulvinar pellentesque.
+              Lobortis mattis aliquam faucibus purus. Nunc faucibus a
+              pellentesque sit amet porttitor eget dolor.
+            </p>
+          </div>
         </div>
-        <div class="right-container">
-            <div class="right-content">
-                <div class="project-content">
-                    <h2>Project #1</h2>
-                    <img class="project-img" src="/images/placeholder.png" alt="project">
-                    <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Tincidunt dui ut ornare lectus sit amet est.
-                        Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Lobortis
-                        mattis aliquam faucibus purus. Nunc faucibus a pellentesque sit amet porttitor eget dolor.</p>
-                </div>
-                <div class="project-content">
-                    <h2>Project #2</h2>
-                    <img class="project-img" src="/images/placeholder.png" alt="project">
-                    <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Tincidunt dui ut ornare lectus sit amet est.
-                        Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Lobortis
-                        mattis aliquam faucibus purus. Nunc faucibus a pellentesque sit amet porttitor eget dolor.</p>
-                </div>
-                <div class="project-content">
-                    <h2>Project #3</h2>
-                    <img class="project-img" src="/images/placeholder.png" alt="project">
-                    <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Tincidunt dui ut ornare lectus sit amet est.
-                        Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Lobortis
-                        mattis aliquam faucibus purus. Nunc faucibus a pellentesque sit amet porttitor eget dolor.</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
     <!-- main body components ends here -->
 
     <!-- structure for forms starts here -->
-    <div class="contact-container" id="contact-id">
-        <h2>Contact Me</h2>
-        <form action="submit.php" method="post">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
+    <div class="overlay" id="popupOverlay">
+      <div class="popup">
+        <span class="close-button" id="closePopup"
+          ><i class="fas fa-times"></i
+        ></span>
+        <h2 class="contact-header">Lets get in touch!</h2>
+        <form class="input-container">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+          <br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+          <br /><br />
+          <label
+          <textarea required></textarea>
+          <button type="submit">Submit</button>
         </form>
+      </div>
     </div>
     <!-- forms component ends here -->
 
     <!-- footer component starts here -->
     <div class="footer-container" id="footer">
-        <h3 class="footer-txt">Made with <3 | Sebastian David &copy; 2023</h3>
+      <h3 class="footer-txt">Made with <3 | Sebastian David &copy; 2023</h3>
     </div>
     <!-- footer components ends here -->
     <script src="/scripts/scroll.js"></script>
-</body>
-
+    <script src="/scripts/contact_form.js"></script>
+  </body>
 </html>

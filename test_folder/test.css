@@ -1,2 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.scaled-element {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px; /* Fixed font size */
+    transition: transform 0.3s ease;
+}
+
+.scaled-text {
+    font-size: 5vw; /* Adjust font size based on viewport width */
+    transition: transform 0.3s ease;
+}
+
+.container:hover .scaled-element {
+    transform: scale(1.5); /* Scales the element to 150% */
+}
+
+.container:hover .scaled-text {
+    transform: scale(1.5); /* Scales the text to 150% */
+}
 
 

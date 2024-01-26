@@ -12,11 +12,11 @@
 }
 
 .container-text{
-    font-size: 28px;
+    font-size: clamp(12px, 1.5vw, 25px);
     margin: 0 3em;
 }
 
 .name-text{
-    font-size: 40px;
+    font-size: clamp(12px, 1.5vw, 35px);
     font-weight: bolder;
 }

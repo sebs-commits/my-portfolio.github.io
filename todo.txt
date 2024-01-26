@@ -10,3 +10,7 @@
 Updates
 1/25/2024
  - created pop up modal form
+
+1/26/2024
+ - minor styling changes
+ - currently working on trying to fix the footer from overlapping

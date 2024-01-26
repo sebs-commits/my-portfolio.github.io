@@ -17,3 +17,29 @@ rightContent.addEventListener("scroll", function () {
     document.body.style.overflowY = "hidden";
   }
 });
+// script disables after 800px
+const mediaQuery = window.matchMedia("(max-width: 800px)");
+
+const handleViewportChange = (event) => {
+  const scriptSrc = "/scripts/scroll.js";
+  const scriptElement = document.querySelector(`script[src="${scriptSrc}"]`);
+
+  if (event.matches) {
+    // Disable your script here or take appropriate action
+    console.log("Script disabled.");
+    if (scriptElement) {
+      scriptElement.remove();
+    }
+  } else {
+    // Enable your script or take appropriate action
+    console.log("Script enabled.");
+    if (!scriptElement) {
+      const script = document.createElement("script");
+      script.src = scriptSrc;
+      document.head.appendChild(script);
+    }
+  }
+};
+
+mediaQuery.addEventListener("change", handleViewportChange);
+handleViewportChange(mediaQuery);

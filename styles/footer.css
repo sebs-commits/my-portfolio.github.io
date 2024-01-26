@@ -1,8 +1,12 @@
 .footer-container{
+    margin: 2rem;
     padding: 2em;
     border-top: lightgrey solid 1px;
+    position: absolute;
+    width: 100%;
 }
 
 .footer-txt{
     text-align: center;
+    font-size: clamp(10px, 1vw, 25px);
 }

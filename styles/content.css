@@ -28,3 +28,11 @@ body{
     overflow-y: auto; /* Make the right content scrollable */
     padding: 10px;
 }
+@media screen and (max-width:800px){
+    .main-container{
+        flex-direction: column;
+    }
+    body{
+        overflow: visible;
+    }
+}
